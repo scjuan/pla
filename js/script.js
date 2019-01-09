@@ -268,7 +268,7 @@ function mutar() {
 // Busca os dados de transmissão do streaming
 function pegarDadosStreaming() {
     var xhttp = new XMLHttpRequest();
-    var urlRequest = (!DEMO) ? 'dados.php' : 'https://web-radio-demo.000webhostapp.com/dados.php';
+    var urlRequest = (!DEMO) ? 'dados.php' : 'https://radio-hds.000webhostapp.com/dados.php';
 	xhttp.onreadystatechange = function() {
         if(this.readyState === 4 && this.status === 200) {
             var dados = JSON.parse(this.responseText);
